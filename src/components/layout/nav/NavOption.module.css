@@ -1,0 +1,20 @@
+.option {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  padding: 1rem;
+  color: var(--neutrals--n-4, #97989B);
+  font-weight: 500;
+  border-radius: var(--border-radius);
+  transition: background-color 0.2s;
+}
+
+.option:hover {
+  color: var(--blue--500);
+  background: var(--blue--0);
+}
+
+.option.isActive {
+  color: var(--blue--700);
+  background: var(--blue--100);
+}

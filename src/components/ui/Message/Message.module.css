@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+}
+.container.isError { 
+  background: var(--error--0);
+  color: var(--error);
+}
+.container.isInfo { 
+  background: var(--info--0);
+  color: var(--info);
+}

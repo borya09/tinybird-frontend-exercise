@@ -1,0 +1,19 @@
+@value medium as bp-medium, large as bp-large from "../../styles/breakpoints.css";
+
+.filters {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  row-gap: 1rem;
+  margin-block: var(--margin--m);
+}
+
+.cards {
+  display: grid;
+  gap: 1rem;
+
+  @media bp-large {
+    grid-template-columns: 2fr 1fr;
+  }
+}

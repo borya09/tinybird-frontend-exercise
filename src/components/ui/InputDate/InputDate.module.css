@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  align-items: baseline;
+  gap: .6rem;
+}
+
+.input {
+  padding-block: .4rem;
+  padding-inline:  1rem .4rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  min-width: 9rem;
+}

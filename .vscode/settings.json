@@ -1,0 +1,14 @@
+{
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "cSpell.words": [
+    "chartjs",
+    "datetime",
+    "dropoff",
+    "tinybird",
+    "tpep",
+    "tripdata",
+    "vendorid"
+  ],
+  "css.lint.unknownProperties": "warning",
+  "css.lint.unknownAtRules": "ignore"
+}

@@ -1,0 +1,14 @@
+@value medium as bp-medium, large as bp-large from "../../../styles/breakpoints.css";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0;  
+
+  @media bp-medium {
+    flex-direction: column;
+    width: 100%;
+  }
+}
