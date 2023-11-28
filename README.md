@@ -3,6 +3,7 @@
 ## Description
 
 Dashboard is a web application designed to display NYC Taxi Trips data through graphical representations.
+Based on tinybird [technical exercise](https://gist.github.com/xavijam/636746d97fee9c9679000c3be3182ec4)
 
 ## Contacts
 
