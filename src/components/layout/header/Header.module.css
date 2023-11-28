@@ -1,4 +1,12 @@
+.logo {
+  height: 100%;
+}
+
+.image {
+  height: 100%;
+}
+
 .avatar {
   font-size: 2rem;
-  color: var(--golden)
+  color: var(--golden);
 }
