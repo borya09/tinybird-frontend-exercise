@@ -4,6 +4,9 @@ import styles from "./InvoicedPage.module.css";
 import TotalAmountByVendorWidget from "./components/TotalAmountByVendorWidget";
 import DailyAmountByVendorWidget from "./components/DailyAmountByVendorWidget";
 
+const defaultMinDate = "2017-01-01";
+const defaultMaxDate = "2017-12-31";
+
 export default function InvoicedPage() {
   const [searchParams, setSearchParams] = useSearchParams();
 
@@ -19,8 +22,8 @@ export default function InvoicedPage() {
     setSearchParams(searchParams);
   };
 
-  const from = searchParams.get("from") || "";
-  const to = searchParams.get("to") || "";
+  const from = searchParams.get("from") || defaultMinDate;
+  const to = searchParams.get("to") || defaultMaxDate;
 
   return (
     <>
@@ -30,6 +33,7 @@ export default function InvoicedPage() {
           label="From"
           name="from"
           value={from}
+          min={defaultMinDate}
           max={to}
           onChange={(d) => handleFromFilter("from", d)}
         />
@@ -38,6 +42,7 @@ export default function InvoicedPage() {
           name="to"
           value={to}
           min={from}
+          max={defaultMaxDate}
           onChange={(d) => handleFromFilter("to", d)}
         />
       </div>
