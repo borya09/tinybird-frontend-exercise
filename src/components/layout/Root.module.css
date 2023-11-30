@@ -28,7 +28,7 @@
   align-items: center;
   justify-content: space-between;
   background: #f1efec;
-  padding-inline: var(--padding-horizontal);
+  padding: 1rem var(--padding-horizontal);
 }
 
 .nav {
