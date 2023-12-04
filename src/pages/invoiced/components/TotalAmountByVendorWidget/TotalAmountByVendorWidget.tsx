@@ -23,6 +23,7 @@ export default function TotalAmountByVendorWidget({
 
   return (
     <Card
+      id="total-invoiced-amount-by-vendor"
       title="Total Invoiced Amount by Vendor"
       icon="circle-dollar-to-slot"
       loading={loading}
@@ -30,6 +31,7 @@ export default function TotalAmountByVendorWidget({
     >
       {showPie && (
         <PieChart<TotalAmountByVendor>
+          
           data={data}
           labelField="id"
           valueField="amount"

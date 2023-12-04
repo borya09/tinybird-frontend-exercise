@@ -39,6 +39,7 @@ export default function DailyAmountByVendorWidget({
 
   return (
     <Card
+      id="daily-invoiced-amount-by-vendor"
       title="Daily Invoiced Amount by Vendor"
       icon="chart-line"
       loading={loading}

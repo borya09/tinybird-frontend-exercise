@@ -4,6 +4,7 @@ import Icon, { IconType } from "../Icon";
 import Message from "../Message";
 
 interface CardProps {
+  id?: string;
   title: string;
   icon: IconType;
   loading?: boolean;
@@ -11,6 +12,7 @@ interface CardProps {
 }
 
 export default function Card({
+  id,
   title,
   icon,
   loading,
@@ -18,7 +20,10 @@ export default function Card({
   children,
 }: PropsWithChildren<CardProps>) {
   return (
-    <article className={styles.container}>
+    <article
+      className={styles.container}
+      {...(id ? { "data-testId": id } : {})}
+    >
       <header className={styles.header}>
         <h1 className={styles.title}>
           <Icon icon={icon} />
